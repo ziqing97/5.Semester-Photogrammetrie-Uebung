@@ -1,0 +1,137 @@
+\documentclass[12pt]{article}
+\usepackage{setspace,graphicx,amsmath,geometry,fontspec,titlesec,soul,bm,float,subfigure}
+\titleformat{\section}[block]{\LARGE\bfseries}{\arabic{section}}{1em}{}[]
+\titleformat{\subsection}[block]{\Large\bfseries\mdseries}{\arabic{section}.\arabic{subsection}}{1em}{}[]
+\titleformat{\subsubsection}[block]{\normalsize\bfseries}{\arabic{subsection}-\alph{subsubsection}}{1em}{}[]
+\titleformat{\paragraph}[block]{\small\bfseries}{[\arabic{paragraph}]}{1em}{}[]
+\setmainfont{Times New Roman}
+\renewcommand{\baselinestretch}{1.15}
+\geometry{a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\begin{document}
+	\newpagestyle{main}{            
+		\sethead{Ziqing Yu}{Übung 0}{3218051}     
+		\setfoot{}{\thepage}{}     
+		\headrule                                     
+		\footrule                                       
+	}
+	\pagestyle{main}
+
+\section{Kameraparameter}
+Die Kamera ist Nikon D5200 Digitalkamera, deren Parameter darunter stehen.
+\begin{figure}[ht]\centering
+	\begin{tabular}{|l|l|l|}
+		\hline
+		Anz. Pixel & Größe des Sensors        & Größe des einzelnen Pixels \\ \hline
+		$6000 \times 4000$  & CMOS-Sensor,$23,5 \times 15,6 mm$ & $3,9 \times 10^{-3} mm $ \\ \hline
+	\end{tabular}
+\end{figure}
+\newline
+Die Optik ist AF-S DX NIKKOR 18-105 mm. Sie ist wechselobjektiv mit mechanischem Zoom. 
+\begin{figure}[ht]\centering
+	\begin{tabular}{|l|l|}
+		\hline
+		Brennweite & resultierende Öffnungswinkel         \\ \hline
+		$18 \ bis \ 105$ mm  & $76°\  bis\  15°20'$  \\ \hline
+	\end{tabular}
+\end{figure}
+\newline
+Die max.Blendenöffnung ist 3,5 bis 5,6 und die min.Blendenöffnung ist 38. Die Blende ist nicht auf einen bestimmten Wert festgestellt.
+
+\section{Bildqualität}
+\subsection{Standardinstellparametern}
+Die Bildschäfer von von der Bildmitte zu den Bildecken variiert nicht. \newline
+\begin{figure}[ht]\centering
+\includegraphics[width=0.8\textwidth]{AUTO.jpg}
+\caption{Automatikmodus Blichtungszeit 1/60; Blendezahl 5,3; ISO 800.}
+\end{figure}
+\subsection{Variierung der ISO-Zahl}
+\begin{figure}[ht]\centering
+	\subfigure[Blichtungszeit 1/60; Blendezahl 5,3; ISO 100.]{
+		\includegraphics[width=0.45\textwidth]{ISO100.jpg}}
+	\subfigure[Blichtungszeit 1/60; Blendezahl 5,3; ISO 640.]{
+		\includegraphics[width=0.45\textwidth]{ISO640.jpg}}
+	\subfigure[Blichtungszeit 1/60; Blendezahl 5,3; ISO 1250.]{
+		\includegraphics[width=0.45\textwidth]{ISO1250.jpg}}
+	\subfigure[Blichtungszeit 1/60; Blendezahl 5,3; ISO 2500.]{
+		\includegraphics[width=0.45\textwidth]{ISO2500.jpg}}
+	\caption{2.2}
+\end{figure}
+Die ISO-Zahl wirkt sich auf die Bildschärfe, obwohl das hier nicht deutlich gesehen werden kann. Wenn ISO sehr groß ist, sind Rauschpunkte zu sehen. 
+\newpage
+\subsection{Variierung der Belichtungszeit}
+\begin{figure}[ht]\centering
+	\subfigure[Blichtungszeit 1; Blendezahl 5,3; ISO 800.]{
+		\includegraphics[width=0.45\textwidth]{BZ1.jpg}}
+	\subfigure[Blichtungszeit 1/60; Blendezahl 5,3; ISO 800.]{
+		\includegraphics[width=0.45\textwidth]{BZ1D60.jpg}}
+	\subfigure[Blichtungszeit 1/400; Blendezahl 5,3; ISO 800.]{
+		\includegraphics[width=0.45\textwidth]{BZ1D400.jpg}}
+	\subfigure[Blichtungszeit 1/1600; Blendezahl 5,3; ISO 800.]{
+		\includegraphics[width=0.45\textwidth]{BZ1D1600.jpg}}
+	\caption{2.3}
+\end{figure}
+Die Blichtungszeit wirkt sich auch auf die Bildschärfe aus, Weil der Kamera nicht $100 \%$ stabil sein, existeiert die Unschäfer wegen Bewegungen. Je länger ist die Blichtungszeit, desto größer ist dieser Effekt \newline
+\subsection{Farbartefakte}
+Keine Farbsäume im Bild ist Erkennbar, obwohl das häufig existiert. Der mögliche Grund für die Farbsäume ist, dass die Brechungsindex von Wellenlänge abhängen, deshalb wird Licht mit kurzer Wellenlängen(blau) stark gebrochen als rote Licht. Weil in Kamare nutzt man die Linsen, ist diese Effekte deutlich an der Bildrand.
+
+\newpage
+\section{Schärfentiefe}
+\subsection{Blendenzahl}
+\begin{figure}[ht]\centering
+	\subfigure[Brennweite 35mm; Blendezahl 4,5; ISO 800.]{
+		\includegraphics[width=0.45\textwidth]{B4,5.jpg}}
+	\subfigure[Brennweite 35mm; Blendezahl 6,3; ISO 800.]{
+		\includegraphics[width=0.45\textwidth]{B6,3.jpg}}
+	\subfigure[Brennweite 35mm; Blendezahl 10; ISO 800.]{
+		\includegraphics[width=0.45\textwidth]{B10.jpg}}
+	\caption{3,1}
+\end{figure}
+Die Schäfe des Fokuspunkts wird nicht verändert mit der Variierung der Blendenzahl. Aber die Schärfetiefe sind unterschiedlich. 
+\begin{equation*}
+g_{v}=\frac{g \cdot f^2}{f^2+k \cdot u\ (g-f)},\ \ \  g_{h}=\frac{g \cdot f^2}{f^2-k \cdot u\ (g-f)}
+\end{equation*}
+\begin{equation*}
+g_{v}-g_{h}=\frac{2 \cdot g \cdot f^2 (u \cdot g - u \cdot f)}{\frac{f^4}{k} - k \cdot u^2 \cdot (g-f)^2}
+\end{equation*}
+Wenn $k=\frac{f}{D}$ größer ist, sind $g_{v} - g_{h}$ also die Schärfetiefe größer und ist der Bild dunkler.  
+\newpage
+\subsection{Aufnahmeentfernung}
+\begin{figure}[ht]\centering
+	\subfigure[Brennweite 35mm; Blendezahl 4,5; ISO 800.]{
+		\includegraphics[width=0.45\textwidth]{B4,5.jpg}}
+	\subfigure[Brennweite 35mm; Blendezahl 6,3; ISO 800.]{
+		\includegraphics[width=0.45\textwidth]{LANG.jpg}}
+	\subfigure[Brennweite 35mm; Blendezahl 10; ISO 800.]{
+		\includegraphics[width=0.45\textwidth]{LANGE.jpg}}
+	\caption{3,2}
+\end{figure}
+Mit größem Abstand steigt die Schärfetiefe an. Die Bildgröße wird auch kleiner. 
+\begin{equation*}
+g_{v}=\frac{g \cdot f^2}{f^2+k \cdot u\ (g-f)},\ \ \  g_{h}=\frac{g \cdot f^2}{f^2-k \cdot u\ (g-f)}
+\end{equation*}
+\begin{equation*}
+g_{v}=\frac{f^2}{k \cdot u + \frac{f^2-k \cdot u \cdot f}{g}},\ \ \  g_{h}=\frac{f^2}{-k \cdot u + \frac{f^2-k \cdot u \cdot f}{g}}
+\end{equation*}
+\begin{equation*}
+g_{h}-g_{v}= \frac{2 \cdot f^2 \cdot k \cdot u}{{\frac{k^2-k \cdot u \cdot f}{g}}^2-k^2 \cdot u^2}
+\end{equation*}
+Wenn $g$ größer ist, wird Schäfertiefe auch größer. 
+\newpage
+\subsection{Brennweite}
+Mit größer Brennweite nimmt die Schärfetiefe ab. \newline
+\begin{figure}[ht]\centering
+	\subfigure[Brennweite 35mm; Blendezahl 6,3; ISO 800.]{
+		\includegraphics[width=0.45\textwidth]{B6,3.jpg}}
+	\subfigure[Brennweite 50mm; Blendezahl 6,3; ISO 800.]{
+		\includegraphics[width=0.45\textwidth]{F50.jpg}}
+	\subfigure[Brennweite 70mm; Blendezahl 6,3; ISO 800.]{
+		\includegraphics[width=0.45\textwidth]{F70.jpg}}
+	\caption{3,3}
+\end{figure}
+\begin{equation*}
+g_{v}=\frac{g \cdot D}{D - u + \frac{u \cdot g}{f}},\ \ \  g_{h}=\frac{g \cdot D}{D + u - \frac{u \cdot g}{f}}
+\end{equation*}
+Wenn $f$ größer ist, wird $g_h$ kleiner und $g_v$ größer, deswegen ist Schäfertiefe kleiner. 
+\subsection{}
+Die Schärfertiefe ist theoretisch in den Aufnahmen auf sowohl die Variation der  Einstellparameter der Kamera als auch die Szenentiefe zurückzuführen.
+\end{document}

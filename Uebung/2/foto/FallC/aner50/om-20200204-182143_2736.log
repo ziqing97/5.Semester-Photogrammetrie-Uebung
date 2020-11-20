@@ -1,0 +1,49 @@
+04.02.2020 18:21:43     OrthoMaster (EDUCATION mode) Version 8.0.9.55161 (64bit), build #216 of 2018-09-07 11:27
+04.02.2020 18:21:43     Generation of Orthophotos
+04.02.2020 18:21:43     Parallel processing
+04.02.2020 18:21:43     Parameters of Generation
+04.02.2020 18:21:43     Orthophoto pixelsize                         0.250    [m]
+04.02.2020 18:21:43     Orthophoto null value                        0        0    0
+04.02.2020 18:21:43     Orthophoto null value, no DTM                0        0    0
+04.02.2020 18:21:43     Orthophoto image georeference format         tiff/tfw [tif,tfw]
+04.02.2020 18:21:43     Overview image generation                    No Overviews
+04.02.2020 18:21:43     Generation of tiled output image             Off
+04.02.2020 18:21:43     Watermark image usage                        Off
+04.02.2020 18:21:43     Naming of orthophoto images                  FallC50<PHOTO>
+04.02.2020 18:21:43     Directory of output orthophoto images        "//studserv/d/users/v078/Documents/5 Semester/Photogrammetrie/2/foto/FallC/aner50"
+04.02.2020 18:21:43     Orthophoto area definition method            Ortho Areas        
+04.02.2020 18:21:43     Usage of the area of interest                Off
+04.02.2020 18:21:43     Azimuth of the ortho photo images            0.0000   [deg]
+04.02.2020 18:21:43     Rectification method                         Fast
+04.02.2020 18:21:43     Distance between anchor points               50.000   [m]
+04.02.2020 18:21:43     Resampling method                            CubicConvolution
+04.02.2020 18:21:43     Usage of visibility mask                     Off
+04.02.2020 18:21:43     Height model in use                          \\studserv\d\users\v078\Documents\5 Semester\Photogrammetrie\1\dom_vaihingen.dtm
+                                                                     //studserv/d/users/v078/Documents/5 Semester/Photogrammetrie/1/dgm_vaihingen.dtm
+                        
+04.02.2020 18:21:43 *W* Available disk space: 0 MB
+04.02.2020 18:21:43     Processing photo : 20010010
+04.02.2020 18:21:43     Processing photo : 20010011
+04.02.2020 18:21:43     Input image : \\studserv\d\users\v078\Documents\5 Semester\Photogrammetrie\1\20010011.tif
+04.02.2020 18:21:43     Input image : \\studserv\d\users\v078\Documents\5 Semester\Photogrammetrie\1\20010010.tif
+04.02.2020 18:21:43     Parameters of the Output Orthophoto
+04.02.2020 18:21:43     Image filename : //studserv/d/users/v078/Documents/5 Semester/Photogrammetrie/2/foto/FallC/aner50/FallC5020010010
+04.02.2020 18:21:43     Sensor: Ue1, 120.0 [mm]
+04.02.2020 18:21:43     Area covered by the orthophoto   497242.375  5421395.875   497477.125  5421602.875 [m]
+04.02.2020 18:21:43     Orthophoto size (width,height, in pixels) 940 829
+04.02.2020 18:21:43     Parameters of the Output Orthophoto
+04.02.2020 18:21:43     Image filename : //studserv/d/users/v078/Documents/5 Semester/Photogrammetrie/2/foto/FallC/aner50/FallC5020010011
+04.02.2020 18:21:43     Sensor: Ue1, 120.0 [mm]
+04.02.2020 18:21:43     Area covered by the orthophoto   497243.125  5421395.375   497478.875  5421603.625 [m]
+04.02.2020 18:21:43     Orthophoto size (width,height, in pixels) 944 834
+04.02.2020 18:21:44     Computation time in detail
+04.02.2020 18:21:44     ..Transformation of object coordinates to pixel coordinates :  7.9 %
+04.02.2020 18:21:44     ..Area of interest checking :  0.0 %
+04.02.2020 18:21:44     ..Interpolation of the pixel intensities : 33.3 %
+04.02.2020 18:21:44     ..File IO for the input image : 50.9 %
+04.02.2020 18:21:44     ..File IO for the output image :  5.3 %
+04.02.2020 18:21:44     ..Generation of the visibility mask :  0.0 %
+04.02.2020 18:21:44     ..Generation of Overviews :  0.0 %
+04.02.2020 18:21:44     ..Generation of rgn files :  2.6 %
+04.02.2020 18:21:44     ..Overall time used (including non-computational parts) : 0.8
+04.02.2020 18:21:44     Successfully processed 2 of 2 images
